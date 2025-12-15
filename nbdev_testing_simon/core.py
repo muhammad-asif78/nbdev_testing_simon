@@ -81,13 +81,14 @@ def download_drive_to_weights(link_or_id: str):
     except subprocess.CalledProcessError as e:
         print("gdown failed:", e)
 
-
 # %% ../nbs/index.ipynb 8
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(download_drive_to_weights)
-
 
 # %% ../nbs/index.ipynb 9
 #| eval: false
@@ -135,13 +136,14 @@ def download_file_from_gdrive(link_or_id: str, dest_folder: str = "sam2_checkpoi
     print("Example command:")
     print(f"  gdown {url!r} -O {file_path!r}")
 
-
 # %% ../nbs/index.ipynb 10
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(download_file_from_gdrive)
-
 
 # %% ../nbs/index.ipynb 13
 #| eval: false
@@ -200,13 +202,14 @@ def download_and_extract_strip_top_folder(link_or_id: str, dest: str = "angle-mo
 
     print(f"Done — check the local '{dest}' folder.")
 
-
 # %% ../nbs/index.ipynb 14
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(download_and_extract_strip_top_folder)
-
 
 # %% ../nbs/index.ipynb 15
 #| eval: false
@@ -244,10 +247,8 @@ def download_file_from_gdrive(link_or_id: str, dest_folder: str = "sam2_checkpoi
     print("Example command:")
     print(f"  gdown {url!r} -O {file_path!r}")
 
-
 # %% ../nbs/index.ipynb 16
 dataset = '/content/Dataset/AiBoardScannerDataSet.coco'
-
 
 # %% ../nbs/index.ipynb 17
 #| eval: false
@@ -261,10 +262,8 @@ img_path = Path("weights") / "metrics_plot.png"
 print(f"Example usage to view the metrics plot:")
 print(f"  Image.open({str(img_path)!r})")
 
-
 # %% ../nbs/index.ipynb 18
 preTrainedWeights = "/content/weights/checkpoint_best_regular.pth"
-
 
 # %% ../nbs/index.ipynb 19
 #| eval: false
@@ -309,13 +308,14 @@ def load_or_convert_file(file_path: str, output_image_path: str = "converted_ima
 
     return imgPath
 
-
 # %% ../nbs/index.ipynb 20
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(load_or_convert_file)
-
 
 # %% ../nbs/index.ipynb 21
 #| eval: false
@@ -391,7 +391,6 @@ from rfdetr.util.coco_classes import COCO_CLASSES
 
 # sv.plot_image(annotated_image)
 
-
 # %% ../nbs/index.ipynb 22
 #| eval: false
 #| hide: true
@@ -414,7 +413,6 @@ for class_id, conf, bbox in zip(detections.class_id, detections.confidence, dete
 
 import json
 print(json.dumps(detected_objects, indent=2))
-
 
 # %% ../nbs/index.ipynb 24
 #| eval: false
@@ -466,55 +464,68 @@ import os
 #     res.save_to_json(json_output_path)
 #     break
 
-
 # %% ../nbs/index.ipynb 25
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(process_paddleocr_json)
-
 
 # %% ../nbs/index.ipynb 26
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(get_text_rotation_for_shape)
-
 
 # %% ../nbs/index.ipynb 27
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(snap_to_standard_angle)
-
 
 # %% ../nbs/index.ipynb 28
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(calculate_rotation_from_polygon)
-
 
 # %% ../nbs/index.ipynb 29
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(_intersection_area)
-
 
 # %% ../nbs/index.ipynb 30
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(_box_area)
-
 
 # %% ../nbs/index.ipynb 31
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(_flatten_poly)
-
 
 # %% ../nbs/index.ipynb 32
 #| eval: false
@@ -677,202 +688,257 @@ def plot_ocr_detections(data):
 # else:
 #     print(f"JSON not found: {json_output_path}")
 
-
 # %% ../nbs/index.ipynb 33
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(plot_ocr_detections)
-
 
 # %% ../nbs/index.ipynb 34
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(get_text_rotation_for_shape)
-
 
 # %% ../nbs/index.ipynb 35
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(predict_angle)
-
 
 # %% ../nbs/index.ipynb 36
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(check_overlap)
-
 
 # %% ../nbs/index.ipynb 37
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(process_image_and_detections_simple)
-
 
 # %% ../nbs/index.ipynb 38
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(greedy_iou_match)
-
 
 # %% ../nbs/index.ipynb 39
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(map_ocr_to_nodes)
-
 
 # %% ../nbs/index.ipynb 40
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(_has_arrow_at)
-
 
 # %% ../nbs/index.ipynb 41
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(create_edges_json)
-
 
 # %% ../nbs/index.ipynb 42
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(_find_node_by_det)
-
 
 # %% ../nbs/index.ipynb 43
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(_det_to_center)
-
 
 # %% ../nbs/index.ipynb 44
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(create_nodes_json)
-
 
 # %% ../nbs/index.ipynb 45
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(iou)
-
 
 # %% ../nbs/index.ipynb 46
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(rgb_to_hex)
-
 
 # %% ../nbs/index.ipynb 47
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(create_confusion_matrix)
-
 
 # %% ../nbs/index.ipynb 48
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(clean_and_extract_number)
-
 
 # %% ../nbs/index.ipynb 49
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(_draw_text_centered)
-
 
 # %% ../nbs/index.ipynb 50
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(_calculate_star_points)
-
 
 # %% ../nbs/index.ipynb 51
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(_calculate_ngon)
-
 
 # %% ../nbs/index.ipynb 52
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(_draw_rotated_polygon)
-
 
 # %% ../nbs/index.ipynb 53
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(_rotate_point)
-
 
 # %% ../nbs/index.ipynb 54
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(draw_label)
-
 
 # %% ../nbs/index.ipynb 55
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(draw_node)
-
 
 # %% ../nbs/index.ipynb 56
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(get_poly_points)
-
 
 # %% ../nbs/index.ipynb 57
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(get_bbox)
-
 
 # %% ../nbs/index.ipynb 58
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(generate_image)
-
 
 # %% ../nbs/index.ipynb 59
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(find_smart_dominant_color)
-
 
 # %% ../nbs/index.ipynb 60
 #| eval: false
 #| echo: false
+#| output: asis#| hide
+#| export
+#| eval: false
+#| echo: false
 #| output: asis
-show_doc(get_corner_background_color)
-
 
 # %% ../nbs/index.ipynb 61
 #| eval: false
@@ -1319,7 +1385,6 @@ def debug_stage(image, detections, ocr_results):
 # print("\n=== Results from Full Pipeline ===")
 # for v in vectors:
 #     print(f"Arrow: Tail={v['tail']} → Head={v['head']} -> Label={v['label']}")
-
 
 # %% ../nbs/index.ipynb 62
 #| eval: false
@@ -2244,7 +2309,6 @@ final_json_output = {
 print("\n--- Final JSON Output ---")
 print(json.dumps(final_json_output, indent=2))
 
-
 # %% ../nbs/index.ipynb 69
 #| eval: false
 import json
@@ -2670,4 +2734,3 @@ if __name__ == "__main__":
 
 # %% ../nbs/index.ipynb 73
 #| export
-
