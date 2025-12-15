@@ -117,7 +117,7 @@ Get the bbox of the text extracted by the paddleOCR from the json file
 
 Main pipeline where find out the main relationship of the arrows with the shapes and the detections of the arrow's endpoints
 
-::: {#cell-56 .cell quarto-private-1='{"key":"colab","value":{"base_uri":"https://localhost:8080/"}}' outputId='4e94c8e9-9a43-4b09-ce5f-c1c2ce32dd56'}
+::: {#cell-56 .cell}
 ``` {.python .cell-code}
 import cv2
 import matplotlib.pyplot as plt
@@ -572,7 +572,7 @@ def debug_stage(image, detections, ocr_results):
 :::
 
 
-::: {#cell-57 .cell quarto-private-1='{"key":"colab","value":{"base_uri":"https://localhost:8080/","height":1000}}' outputId='a7aee19d-2bb5-46cf-b52c-1e03d8818e25'}
+::: {#cell-57 .cell}
 ``` {.python .cell-code}
 from scipy.interpolate import splprep, splev
 
