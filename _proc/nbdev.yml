@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "nbdev_testing_simon"
+  site-url: "https://Muhammad Asif.github.io/nbdev_testing_simon"
+  description: "AI Board Scanner using nbdev"
+  repo-branch: main
+  repo-url: "https://github.com/Muhammad Asif/nbdev_testing_simon"

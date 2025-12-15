@@ -1,0 +1,15 @@
+{
+  "index.ipynb": {
+    "README.md": "21a13c61",
+    "index.html": "0be97580",
+    "index.html.md": "7819f6a7"
+  },
+  "00_core.ipynb": {
+    "core.html": "25663f56",
+    "core.html.md": "becb6224"
+  },
+  "00_core.backup.ipynb": {
+    "core.backup.html": "be69ede4",
+    "core.backup.html.md": "42bbcb18"
+  }
+}

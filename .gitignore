@@ -1,0 +1,39 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Ignore environment files
+.env
+*.env
+
+
+!weights/
+!weights/*
+
+# Ignore virtual environments
+venv/
+.env/
+.envrc
+.venv/
+env/
+
+# Ignore IDE/editor configs
+.vscode/
+.idea/
+*.swp
+
+
+# Ignore Jupyter notebooks
+*.ipynb
+AiBoardScanner__ (1).ipynb
+
+# Ignore sensitive config in pasapi
+pasapi/config.json
+pasapi/secrets.json
+pasapi/*.env
+pasapi/*.ini
+pasapi/*.yaml
+pasapi/*.yml 

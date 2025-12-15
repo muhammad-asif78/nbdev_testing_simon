@@ -1,0 +1,5 @@
+-r requirements.txt
+# Replace paddlepaddle with a matching GPU build below (example: CUDA 11.8)
+# First uninstall CPU paddlepaddle then install the GPU wheel:
+# pip uninstall -y paddlepaddle
+# pip install paddlepaddle-gpu==2.6.1.post118 -f https://www.paddlepaddle.org.cn/whl/windows/mkl/avx/stable.html

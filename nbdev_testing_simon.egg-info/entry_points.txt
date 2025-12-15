@@ -1,0 +1,2 @@
+[nbdev]
+nbdev_testing_simon = nbdev_testing_simon._modidx:d
